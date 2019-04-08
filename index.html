@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>iBec Test Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700i" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+
+      <div class="card">
+        
+        <header class="card__header">
+          <img id="profile" onmouseover="largerImg()" onmouseout="smallerImg()" src="img/me.jpg" class ="card__img">
+        </header>
+
+        <div class="card__content">
+          <h1 class="card__title">Kevin Lane</h1>
+          <h2 class="card__subtitle">Bowdoin Class of 2019</h2>
+        </div>
+
+        <div class="card__box">
+          <h2>About the Academics</h2>
+          <p style="text-align: left"> Kevin is a computer science major and music minor at Bowdoin College.  This past year, he's mainly been working in AI, creating programs designed to play Tetris, optimize location in N-dimensional solution spaces, and identify objects in film using Tensorflow's object recognition software and openCV.  Last summer, Kevin worked as a fullstack web developer at Considdr, a startup dedicated to creating a search engine for well-sourced information on complex issues.  He worked on the design flow of the website and helped construct backend APIs to populate the website database.  Prior to that, Kevin worked as a swim instructor for six years.</p>
+        </div>
+
+        <div class="card__box">
+          <h2>About the Man</h2>
+          <p style="text-align: left">Kevin is an avid outdoorsman.  He's one of the officers for Bowdoin's Outing Club, where he's in charge of trip logistics and communication.  When he's not out hiking, he's snowboarding, kayaking, or rafting.  He's also swum down two waterfalls (once on purpose, once by accident).  When Kevin isn't outside, he spends a lot of time playing and recording music.  He plays several instruments (not all of them well) and harbors delusions of forming a one-man recording band.  Kevin also is an enormous baseball fan.  He's been working on a neural network designed to predict the outcome of batted ball events in the hopes of improving defensive metrics.</p>
+        </div>
+
+        <div class="clear"/>
+
+        <footer class="card__footer">
+          <p>Cell: (914)-606-0669</p>
+          <a href="https://drive.google.com/file/d/1drxkKI2xpz-nkjA_7UUFe1LGnQIdIvnK/view?usp=sharing">Kevin's Resume</a>
+          <p>Email: kplane@bowdoin.edu</p>
+
+        </footer>
+        <img src="svg/arrow.svg" />
+       <!-- End .card -->
+
+    </div> <!-- End .container -->
+
+    <script type="text/javascript">
+      function largerImg(){
+        document.getElementById("profile").style.height = "200px";
+      }
+
+      function smallerImg(){
+        document.getElementById("profile").style.height = "175px";
+      }
+    </script>
+  </body>
+</html>
